@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Say what you need to say!</title>
+</head>
+<body>
+<h2>Type whatever you want to say here</h2>
+<form action="sign" method="POST">
+  Machine: <input name="guest_name" value="pi"><br>
+  <textarea name="content" rows="3" cols="60"></textarea><br>
+  <input type="submit" value="Say!">
+</form>
+<hr>
+{% for row in rows %}
+  <p>{{ row[0]|e }} said:
+    <blockquote>
+      {{ row[1]|e }}
+    </blockquote>
+    at {{ row[2]|e }}
+  </p>
+  <hr>
+{% endfor %}
