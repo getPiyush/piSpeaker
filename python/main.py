@@ -88,7 +88,7 @@ class StrReader(webapp2.RequestHandler):
 		responseText = str(row[0][1])
 		requestText = self.request.get("last")
 		if responseText == requestText:
-			responseText = 'This is a WSGIApplication'
+			responseText = 'dont say'
 		self.response.out.write(responseText)
         
 
