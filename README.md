@@ -10,7 +10,7 @@ https://5862307911434240-dot-shared-playground.appspot.com/?set_access_key_cooki
 
 Text Output URL
 https://5862307911434240-dot-shared-playground.appspot.com/say?last=what%20the%20hell
-if "last" GET parameter in the output URL matches the last/latest database entry, the output will be "This is a WSGIApplication", this is made to avoid repeat speak
+if "last" GET parameter in the output URL matches the last/latest database entry, the output will be "dont say", this is made to avoid repeat speak
 
 
 
